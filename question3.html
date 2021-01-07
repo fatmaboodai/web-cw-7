@@ -18,7 +18,17 @@
         اللي إنت اتابعها Animeتحتوي على مسلسلات ال myAnime المصفوفة الأولى
         اللي رفيجك يتابعها Animeتحتوي على مسلسلات ال myFriendAnime المصفوفة الثانية
       */
+      let myAnime =[
+       "tokyo ghoul",
+       "demon slayer",
+       "fire force",
+      ]
 
+      let myFriendAnime = [
+     "demon slayer",
+      "detective conan",
+      "fire force",
+      ]
       // 2
       // mutualAnime عرف مصفوفة فاضية سمها
 
@@ -29,6 +39,19 @@
       // ودك تشوف اللستة المشتركة بينكم على الموقع؟
       // 🏃🏻‍♂️ ادخل على صفحة الموقع في المتصفح
 
+     let  mutualAnime=[];
+    
+for (let index = 0; index < myAnime.length; index++) {
+  const element = myAnime[index];
+
+for (let index = 0; index <myFriendAnime.length; index++) {
+  const element2 = myFriendAnime[index];
+if (element === element2) 
+{
+mutualAnime.push(element)
+}
+}
+}
       let ul = document.createElement("ul");
       ul.className = "myList";
       document.getElementById("container").appendChild(ul);
